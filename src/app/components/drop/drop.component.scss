@@ -1,0 +1,22 @@
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.column-drop {
+  padding: 20px;
+  height: 100vh;
+  background-color: lightgray;
+  border: 1px solid darkmagenta;
+  &__active-zone {
+    min-height: 100px;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: darkcyan;
+  }
+}
+
+.title {
+  text-align: center;
+}

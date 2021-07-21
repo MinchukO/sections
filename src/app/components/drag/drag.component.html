@@ -1,0 +1,9 @@
+<div class="column-drag">
+  <h2 class="title">Drag elements</h2>
+  <div class="example-container">
+    <div cdkDropList [cdkDropListData]="elements"
+      (cdkDropListDropped)="onDrop($event)">
+      <div class="example-box" *ngFor="let item of elements" cdkDrag>{{item}}</div>
+    </div>
+  </div>
+</div>

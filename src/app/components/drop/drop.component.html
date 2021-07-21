@@ -1,0 +1,10 @@
+<div class="column-drop">
+  <h2 class="title">Drop zone</h2>
+    <div cdkDropList [cdkDropListData]="builderForm"
+    class="column-drop__active-zone"
+      (cdkDropListDropped)="onDrop($event)">
+      <div class="movie-block" *ngFor="let item of builderForm" cdkDrag>
+        {{item}}</div>
+    </div>
+</div>
+
